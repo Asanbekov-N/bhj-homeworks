@@ -6,9 +6,9 @@ modalMain.className += " modal_active";
 
 if (closeModal.length > 0) {
   for(let i = 0; i < closeModal.length; i++) {
-    const elemen = closeModal[i];
-    elemen.addEventListener('click', function(e) {
-      modalClose(elemen.closest(".modal"));
+    const element = closeModal[i];
+    element.addEventListener('click', function() {
+      modalClose(element.closest(".modal"));
     })
   }
 }
